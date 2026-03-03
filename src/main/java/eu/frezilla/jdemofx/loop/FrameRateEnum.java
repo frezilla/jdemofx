@@ -8,15 +8,15 @@ public enum FrameRateEnum {
     FPS120(120),
     FPS240(240);
     
-    private final double duration;
+    private final long duration;
     private final int fps;
     
     private FrameRateEnum(int fps) {
         this.fps = fps;
-        this.duration = 1.0/fps;
+        this.duration = (long) (1.0/fps * 1000000000);
     }
     
-    public double getDuration() {
+    public long getDuration() {
         return duration;
     }
     
