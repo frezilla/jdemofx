@@ -1,8 +1,13 @@
 package eu.frezilla.jdemofx;
 
+import eu.frezilla.jdemofx.loop.FrameRateEnum;
 import eu.frezilla.jdemofx.loop.GameLoop;
 
 public class GameLoopImpl extends GameLoop {
+
+    public GameLoopImpl() {
+        super(FrameRateEnum.FPS24);
+    }
 
     @Override
     public void cleanUpAndExit() {
