@@ -1,6 +1,6 @@
 package eu.frezilla.jdemofx.loop;
 
-public enum FrameRates {
+public enum FrameRateEnum {
     FPS24(24),
     FPS30(30),
     FPS60(60),
@@ -11,7 +11,7 @@ public enum FrameRates {
     private final double duration;
     private final int fps;
     
-    private FrameRates(int fps) {
+    private FrameRateEnum(int fps) {
         this.fps = fps;
         this.duration = 1.0/fps;
     }
