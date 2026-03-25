@@ -1,4 +1,4 @@
-package eu.frezilla.jdemofx.render;
+package eu.frezilla.jdemofx.core.render;
 
 import java.awt.Dimension;
 
@@ -7,16 +7,17 @@ import java.awt.Dimension;
  *
  * <p>
  * Les valeurs de la hauteur et de la largeur sont des entiers positifs et ne
- * sont plus modifiables.
+ * sont plus modifiables une fois l'objet créé.
  */
-public final class Size {
-
+public class Size {
+    
     private final int height;
     private final int width;
 
     /**
-     * Constructeur de la classe. La largeur et la hauteur doivent être positifs
-     * .
+     * Constructeur de la classe. 
+     * <p>
+     * La largeur et la hauteur doivent être positifs.
      *
      * @param width Largeur
      * @param height Hauteur

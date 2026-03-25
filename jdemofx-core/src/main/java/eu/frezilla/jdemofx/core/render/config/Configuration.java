@@ -1,7 +1,7 @@
-package eu.frezilla.jdemofx.render.configuration;
+package eu.frezilla.jdemofx.core.render.config;
 
-import eu.frezilla.jdemofx.render.ImageType;
-import eu.frezilla.jdemofx.render.Size;
+import eu.frezilla.jdemofx.core.render.ImageType;
+import eu.frezilla.jdemofx.core.render.Size;
 import java.awt.Color;
 import java.util.Objects;
 
@@ -24,7 +24,7 @@ import java.util.Objects;
  *
  * @see Builder
  */
-public final class Configuration {
+public class Configuration {
 
     private final Color backgroundColor;
     private final ImageType imageType;
@@ -35,10 +35,10 @@ public final class Configuration {
         this.imageType = Objects.requireNonNull(imageType, "Le type de l'image n'est pas correctement défini");
         this.size = Objects.requireNonNull(size, "la taille n'est pas correctement définie");
     }
-    
+
     /**
      * Retourne la couleur de fond de la zone d'affichage.
-     * 
+     *
      * @return Couleur du fond
      * @see Color
      */
@@ -56,10 +56,10 @@ public final class Configuration {
     public static Builder getBuilder() {
         return new Builder();
     }
-    
+
     /**
      * Retourne le type de l'image.
-     * 
+     *
      * @return Type de l'image
      * @see ImageType
      */
@@ -76,4 +76,5 @@ public final class Configuration {
     public Size getSize() {
         return size;
     }
+
 }

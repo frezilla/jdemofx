@@ -1,15 +1,15 @@
-package eu.frezilla.jdemofx.render;
+package eu.frezilla.jdemofx.core.render;
 
-import eu.frezilla.jdemofx.render.configuration.Configuration;
+import eu.frezilla.jdemofx.core.render.config.Configuration;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.Objects;
 import javax.swing.JPanel;
 
-public final class Display extends JPanel {
+public class Display extends JPanel {
     
-    private BufferedImage image;
+    private transient BufferedImage image;
     
     public Display(Configuration configuration) {
         Objects.requireNonNull(configuration, "La configuration est absente");
@@ -31,7 +31,7 @@ public final class Display extends JPanel {
     }
     
     public void setImage(BufferedImage img) {
-        this.image = Objects.requireNonNull(img, "L'image a afficher est absente");
+        this.image = Objects.requireNonNull(img, "L'image à afficher est absente");
     }
-
+    
 }

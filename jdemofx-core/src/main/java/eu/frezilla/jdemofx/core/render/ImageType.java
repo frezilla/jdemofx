@@ -1,4 +1,4 @@
-package eu.frezilla.jdemofx.render;
+package eu.frezilla.jdemofx.core.render;
 
 import java.awt.image.BufferedImage;
 

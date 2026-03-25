@@ -1,8 +1,8 @@
-package eu.frezilla.jdemofx.render.configuration;
+package eu.frezilla.jdemofx.core.render.config;
 
-import eu.frezilla.jdemofx.render.ImageType;
-import eu.frezilla.jdemofx.render.Size;
-import eu.frezilla.jdemofx.render.Sizes;
+import eu.frezilla.jdemofx.core.render.ImageType;
+import eu.frezilla.jdemofx.core.render.Size;
+import eu.frezilla.jdemofx.core.render.Sizes;
 import java.awt.Color;
 
 /**
@@ -20,8 +20,8 @@ import java.awt.Color;
  * @see Configuration
  * @see Sizes
  */
-public final class Builder {
-
+public class Builder {
+    
     private Color backgroundColor;
     private ImageType imageType;
     private Size size;
@@ -77,4 +77,5 @@ public final class Builder {
         this.size = size;
         return this;
     }
+    
 }
