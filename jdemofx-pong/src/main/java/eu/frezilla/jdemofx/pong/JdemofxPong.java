@@ -2,7 +2,7 @@ package eu.frezilla.jdemofx.pong;
 
 import eu.frezilla.jdemofx.core.loop.FrameRateEnum;
 import eu.frezilla.jdemofx.core.loop.GameLoop;
-import eu.frezilla.jdemofx.core.loop.Stage;
+import eu.frezilla.jdemofx.core.stage.Stage;
 import eu.frezilla.jdemofx.pong.stages.end.EndStage;
 import eu.frezilla.jdemofx.pong.stages.init.InitStage;
 import javax.swing.JFrame;

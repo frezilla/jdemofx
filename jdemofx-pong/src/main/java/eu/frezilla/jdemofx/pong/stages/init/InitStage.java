@@ -1,6 +1,6 @@
 package eu.frezilla.jdemofx.pong.stages.init;
 
-import eu.frezilla.jdemofx.core.loop.Stage;
+import eu.frezilla.jdemofx.core.stage.Stage;
 import eu.frezilla.jdemofx.pong.stages.AbstractStage;
 import java.util.Objects;
 import javax.swing.JFrame;
