@@ -1,4 +1,4 @@
-package eu.frezilla.jdemofx.core.loop;
+package eu.frezilla.jdemofx.core.stage;
 
 public interface Stage {
 

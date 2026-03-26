@@ -1,5 +1,6 @@
 package eu.frezilla.jdemofx.core.loop;
 
+import eu.frezilla.jdemofx.core.stage.Stage;
 import java.time.Duration;
 import java.util.Objects;
 import org.slf4j.Logger;
