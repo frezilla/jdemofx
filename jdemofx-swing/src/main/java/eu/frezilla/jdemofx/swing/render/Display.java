@@ -1,6 +1,6 @@
-package eu.frezilla.jdemofx.core.render;
+package eu.frezilla.jdemofx.swing.render;
 
-import eu.frezilla.jdemofx.core.render.config.Configuration;
+import eu.frezilla.jdemofx.swing.render.config.Configuration;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;

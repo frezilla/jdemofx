@@ -3,8 +3,10 @@ package eu.frezilla.jdemofx.pong;
 import eu.frezilla.jdemofx.core.loop.FrameRateEnum;
 import eu.frezilla.jdemofx.core.loop.GameLoop;
 import eu.frezilla.jdemofx.core.stage.Stage;
-import eu.frezilla.jdemofx.pong.stages.end.EndStage;
-import eu.frezilla.jdemofx.pong.stages.init.InitStage;
+import eu.frezilla.jdemofx.pong.stage.title.TitleStage;
+import eu.frezilla.jdemofx.swing.render.config.Configuration;
+import eu.frezilla.jdemofx.swing.stage.FinalStage;
+import eu.frezilla.jdemofx.swing.stage.FirstStage;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
 
@@ -18,9 +20,12 @@ public class JdemofxPong {
     }
 
     public static void main(String[] args) {
+        Configuration configuration = Configuration.getBuilder().build();
         JFrame frame = createJFrame();
-        Stage initStage = new InitStage(frame, new EndStage(frame));
-        GameLoop gameLoop = new GameLoop(FrameRateEnum.FPS24, initStage);
+        Stage finalStage = new FinalStage(frame);
+        Stage mainStage = new TitleStage(frame, configuration);
+        Stage firstStage = new FirstStage(frame, configuration, mainStage);
+        GameLoop gameLoop = new GameLoop(FrameRateEnum.FPS60, firstStage);
         gameLoop.start();
     }
 }

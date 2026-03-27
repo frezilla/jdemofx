@@ -1,4 +1,4 @@
-package eu.frezilla.jdemofx.core.render;
+package eu.frezilla.jdemofx.swing.render;
 
 /**
  * Enumération de {@code Size}.

@@ -12,6 +12,7 @@
     <modules>
         <module>jdemofx-core</module>
         <module>jdemofx-pong</module>
+        <module>jdemofx-swing</module>
     </modules>
     <dependencyManagement>
         <dependencies>

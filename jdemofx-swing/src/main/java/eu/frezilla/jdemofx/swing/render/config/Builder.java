@@ -1,8 +1,8 @@
-package eu.frezilla.jdemofx.core.render.config;
+package eu.frezilla.jdemofx.swing.render.config;
 
-import eu.frezilla.jdemofx.core.render.ImageType;
-import eu.frezilla.jdemofx.core.render.Size;
-import eu.frezilla.jdemofx.core.render.Sizes;
+import eu.frezilla.jdemofx.swing.render.ImageType;
+import eu.frezilla.jdemofx.swing.render.Size;
+import eu.frezilla.jdemofx.swing.render.Sizes;
 import java.awt.Color;
 
 /**
