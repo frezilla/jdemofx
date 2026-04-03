@@ -23,7 +23,7 @@ public class JdemofxPong {
         Configuration configuration = Configuration.getBuilder().build();
         JFrame frame = createJFrame();
         Stage finalStage = new FinalStage(frame);
-        Stage mainStage = new TitleStage(frame, configuration);
+        Stage mainStage = new TitleStage(frame, configuration, finalStage);
         Stage firstStage = new FirstStage(frame, configuration, mainStage);
         GameLoop gameLoop = new GameLoop(FrameRateEnum.FPS60, firstStage);
         gameLoop.start();

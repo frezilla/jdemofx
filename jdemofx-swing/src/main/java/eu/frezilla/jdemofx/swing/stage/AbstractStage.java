@@ -25,8 +25,8 @@ public abstract class AbstractStage implements Stage {
     
     @Override
     public void initialize() {
-        frame.removeAll();
-        frame.add(display);
+        frame.getContentPane().removeAll();
+        frame.getContentPane().add(display);
     }
     
     @Override

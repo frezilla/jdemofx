@@ -4,9 +4,9 @@ public interface Stage {
 
     default void cleanUpAndExit() {}
 
-    default boolean continueLoop() { return false; }
-
     default void initialize() {}
+    
+    default boolean loop() { return false; }
 
     default Stage next() { return null; }
 

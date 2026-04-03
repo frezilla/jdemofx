@@ -35,8 +35,8 @@ public class GameLoop {
 
             LOGGER.trace("Initialize");
             currentStage.initialize();
-
-            while (currentStage.continueLoop()) {
+            
+            do {
                 long startTime = System.nanoTime();
 
                 LOGGER.trace("Process input");
@@ -58,7 +58,7 @@ public class GameLoop {
                         Thread.currentThread().interrupt();
                     }
                 }
-            }
+            } while (currentStage.loop());
 
             LOGGER.trace("Clean up and exit");
             currentStage.cleanUpAndExit();

@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import java.util.Objects;
 import javax.swing.JPanel;
 
-public class Display extends JPanel {
+public final class Display extends JPanel {
     
     private transient BufferedImage image;
     
